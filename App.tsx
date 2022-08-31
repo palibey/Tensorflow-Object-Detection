@@ -1,20 +1,20 @@
-import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
+import React, { useState, useEffect } from 'react';
+import {StyleSheet, Text, View, Platform, Button} from 'react-native';
+import {Camera, CameraType} from 'expo-camera';
+import * as tf from "@tensorflow/tfjs";
+import * as mobilenet from '@tensorflow-models/mobilenet';
+import { cameraWithTensors } from '@tensorflow/tfjs-react-native';
+import {TensorFlowCamera} from "./TensorFlowCamera";
+import {TensorFlowComp} from "./Functional";
+
+
 
 export default function App() {
+  const handleDetections = (e) => {
+    console.log(e);
+  }
   return (
-    <View style={styles.container}>
-      <Text>Open up App.tsx to start working on your app!</Text>
-      <StatusBar style="auto" />
-    </View>
+        <TensorFlowComp handleDetections={handleDetections} modelConfig={null} renderPerFrame={60} developerMode={false}/>
   );
 }
 
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-});
