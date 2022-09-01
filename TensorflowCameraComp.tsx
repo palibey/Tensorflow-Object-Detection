@@ -46,7 +46,7 @@ const styles = StyleSheet.create({
     }
 });
 
-export function TensorFlowComp(props) {
+export function TensorflowCameraComp(props) {
     const [permission, setPermission] = useState<boolean>(false);
     const [detections, setDetections] = useState<string[]>([]);
     const [cameraType, setCameraType] = useState<CameraType>(CameraType.back);

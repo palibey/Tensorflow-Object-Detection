@@ -1,7 +1,12 @@
 {
-  "name": "tensor_flow_test",
-  "version": "1.0.0",
+  "name": "tensor-flow-comp",
+  "version": "0.1.0",
+  "private": false,
   "main": "node_modules/expo/AppEntry.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/palibey/Tensorflow-Object-Detection"
+  },
   "scripts": {
     "start": "expo start",
     "android": "expo start --android",
@@ -27,6 +32,5 @@
   "devDependencies": {
     "@babel/core": "^7.12.9",
     "typescript": "^4.6.3"
-  },
-  "private": true
+  }
 }
