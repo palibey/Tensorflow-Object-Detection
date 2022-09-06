@@ -11,6 +11,7 @@ const initialiseTensorflow = async () => {
     await tf.ready();
     tf.getBackend();
 }
+
 const textureDims = Platform.OS === 'ios' ?
     {
         height: 1920,
@@ -41,7 +42,7 @@ const styles = StyleSheet.create({
         backgroundColor: 'transparent',
         margin: 64,
     },
-    error:{
+    error: {
         margin: 64,
     }
 });
