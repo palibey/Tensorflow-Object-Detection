@@ -1,6 +1,6 @@
 {
   "name": "tensor-flow-comp",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "private": false,
   "main": "node_modules/expo/AppEntry.js",
   "repository": {
