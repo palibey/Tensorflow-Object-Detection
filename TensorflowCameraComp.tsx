@@ -51,7 +51,7 @@ const styles = StyleSheet.create({
  * handleDetections prop is there to lift the detections state up for further applications
  * modelConfig prop is there to give a custom model to the component if given null it will use default model
  * renderPerFrame prop is there so that the developer can set the frame rate for the camera
- * developerMode prop is there to create an easy debugging experience for the developer (it shows the detections in the camera view)
+ * developerMode prop is there to create an easy debugging experience for the developer (it shows the detections in the camera view if true)
  * @param props
  */
 export function TensorflowCameraComp(props) {
